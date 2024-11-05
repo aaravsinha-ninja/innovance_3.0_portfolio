@@ -1,4 +1,5 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar} from "./components/globals/Navbar";
 import {Hero} from "./components/main/Hero/Hero";
 import {MyAdvantage} from "./components/main/MyAdvantage/MyAdvantage";
