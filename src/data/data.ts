@@ -33,8 +33,8 @@ export const socials = [
     name: "github",
   },
   {
-    link: "https://github.com/",
+    link: "https://facebook.com/",
     icon: "https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg",
-    name: "github",
+    name: "facebook",
   },
 ];
