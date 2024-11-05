@@ -2,33 +2,41 @@ import { useState, useEffect } from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import testimonials from "../../../data/testimonials.json";
 
-export const BrunoQuote = () => {
+export const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
 
-  // Automatically advance to the next slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      handleNextSlide();
     }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  const handleNextSlide = () => {
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      setIsFading(false);
+    }, 300);
   };
 
-  const goToPreviousSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
+  const handlePreviousSlide = () => {
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + testimonials.length) % testimonials.length
+      );
+      setIsFading(false);
+    }, 300);
   };
 
   return (
-    <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-white font-montserrat flex items-center justify-center px-4">
-      {/* Arrow buttons positioned separately from the quote */}
+    <div className="relative w-full h-[500px] bg-white font-montserrat flex items-center justify-center px-4">
       <button
-        onClick={goToPreviousSlide}
+        onClick={handlePreviousSlide}
         className="absolute left-4 md:left-10 lg:left-20 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-900 p-2"
         aria-label="Previous Slide"
       >
@@ -36,15 +44,18 @@ export const BrunoQuote = () => {
       </button>
 
       <button
-        onClick={goToNextSlide}
+        onClick={handleNextSlide}
         className="absolute right-4 md:right-10 lg:right-20 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-900 p-2"
         aria-label="Next Slide"
       >
         <SlArrowRight size={24} className="md:size-8" />
       </button>
 
-      {/* Quote container centered between arrows */}
-      <div className="max-w-2xl lg:max-w-3xl px-4 md:px-8 text-center mt-10 md:mt-20">
+      <div
+        className={`max-w-2xl lg:max-w-3xl px-4 md:px-8 text-center mt-10 md:mt-20 transition-opacity duration-300 ${
+          isFading ? "opacity-0" : "opacity-100"
+        }`}
+      >
         <div className="text-xl md:text-2xl text-black font-medium mb-6 md:mb-10">
           "{testimonials[currentIndex].quote}"
         </div>
