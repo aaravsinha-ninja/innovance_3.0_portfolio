@@ -1,0 +1,35 @@
+{
+    "skills": [
+      {
+        "name": "Figma",
+        "proficiency": "90%",
+        "image":"components/main/MyAdvantage/Images/figma.png"
+      },
+      {
+        "name": "Sketch",
+        "proficiency": "95%",
+        "image":"components/main/MyAdvantage/Images/sktech.png"
+      },
+      {
+        "name": "Adobe XD",
+        "proficiency": "82%",
+        "image":"components/main/MyAdvantage/Images/adobe.png"
+      },
+      {
+        "name": "Javascript",
+        "proficiency": "93%",
+        "image":"components/main/MyAdvantage/Images/js.png"
+      },
+      {
+        "name": "Bootstrap",
+        "proficiency": "76%",
+        "image":"components/main/MyAdvantage/Images/bootstrap.png"
+      },
+      {
+        "name": "HTML5/CSS",
+        "proficiency": "88%",
+        "image":"components/main/MyAdvantage/Images/html.png"
+      }
+    ]
+  }
+  
