@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["montserrat"],
+        montserratBold: ["montserratBold"],
         imfell: ["imfell"],
       },
     },
