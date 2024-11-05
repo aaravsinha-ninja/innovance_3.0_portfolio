@@ -1,13 +1,15 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "./components/globals/Navbar";
 import Hero from "./components/main/Hero/Hero";
 import { MyAdvantage } from "./components/main/MyAdvantage/MyAdvantage";
-import { EducationExperience } from "./components/main/EducationExperience/EducationExperience";
+import EducationExperience from "./components/main/EducationExperience/EducationExperience";
 import { LatestProjects } from "./components/main/LatestProjects/LatestProjects";
-import { BrunoQuote } from "./components/main/BrunoQuote/BrunoQuote";
-import { BrunoCarousel } from "./components/main/BrunoCarousel/BrunoCarousel";
+import { TestimonialCarousel } from "./components/main/Testimonials/TestimonialsCarousel";
+import { TestimonialImage } from "./components/main/TestimonialImages/TestimonialImage";
 import { CallBruno } from "./components/main/CallBruno/CallBruno";
 import { Footer } from "./components/globals/Footer";
+import Divider from "./components/main/Divider";
 
 const App = () => {
   return (
