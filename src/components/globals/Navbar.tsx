@@ -30,9 +30,9 @@ export const Navbar = () => {
               </div>
             ))}
         </div>
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-3">
           <div>
-            <img src={navbar_details.logo} alt="logo" className="w-20" />
+            <img src={navbar_details.logo} alt="logo" className="w-14" />
           </div>
           <div>{navbar_details.name}</div>
         </div>
