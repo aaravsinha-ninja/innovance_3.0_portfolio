@@ -11,7 +11,12 @@ export const Footer = () => {
       <div className="text-sm font-montserrat flex flex-col md:flex-row-reverse gap-4 md:gap-0 justify-between items-center py-3 md:py-6 px-10 md:px-0 mt-10 md:mt-10">
         <div>&copy;&nbsp;{footer.copyRightText}</div>
         <div>
-          <a href={`mailto:${footer.email}`}>{footer.email}</a>
+          <a
+            href={`mailto:${footer.email}`}
+            className="text-black no-underline"
+          >
+            {footer.email}
+          </a>
         </div>
         <SocialMediaLinks />
       </div>
