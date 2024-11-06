@@ -38,10 +38,10 @@ const EducationExperience = () => {
   return (
     <section className="p-8 bg-white">
       <h2 className="text-3xl font-thin font-imfell mb-12 text-center">Education & Experience</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] lg:mx-[8rem]">
         <div className="text-left">
           {education.map((edu, index) => (
-            <div key={index} className="mb-2"> 
+            <div key={index} className="mb-2 "> 
               <p className="text-sm font-semibold text-gray-400 mb-4">{edu.year}</p>
               <h3 className="text-xl font-imfell">{edu.title}</h3>
               <p className="text-gray-500 font-semibold ">{edu.institution}</p>
