@@ -11,7 +11,7 @@ const SocialMediaLinks = () => {
               <img
                 src={social.icon}
                 alt={social.name}
-                className="aspect-square w-5"
+                className="aspect-square w-7"
               />
             </a>
           </div>

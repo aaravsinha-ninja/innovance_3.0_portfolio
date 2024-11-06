@@ -18,7 +18,7 @@ export const Navbar = () => {
     visible: { opacity: 1, y: 124 },
   };
   return (
-    <div className="text-sm font-montserratBold font-black w-[70vw] m-auto">
+    <div className="text-sm font-montserrat font-black w-[70vw] m-auto">
       <div className="flex justify-between items-center z-50 relative py-6 bg-white">
         <div className="md:flex gap-7 hidden">
           {navlinks &&
@@ -32,7 +32,7 @@ export const Navbar = () => {
         </div>
         <div className="flex flex-col items-center gap-3">
           <div>
-            <img src={navbar_details.logo} alt="logo" className="w-14" />
+            <img src={navbar_details.logo} alt="logo" className="w-10" />
           </div>
           <div>{navbar_details.name}</div>
         </div>
