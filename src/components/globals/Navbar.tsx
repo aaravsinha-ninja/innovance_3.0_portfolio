@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   const variants = {
     hidden: { opacity: 0, y: 0 },
-    visible: { opacity: 1, y: 124 },
+    visible: { opacity: 1, y: 108 },
   };
   return (
     <div className="text-sm font-montserrat font-black w-[70vw] m-auto">
@@ -56,7 +56,7 @@ export const Navbar = () => {
               exit="hidden"
               variants={variants}
               transition={{ duration: 0.5 }}
-              className="p-4 md:hidden absolute top-0 left-0 bg-white w-full"
+              className="p-4 md:hidden absolute top-0 left-0 bg-white w-full border-b-black border"
             >
               <div className="flex flex-col gap-7 md:gap-4 w-[70vw] m-auto">
                 {navlinks &&
