@@ -19,7 +19,7 @@ export const CallBruno = () => {
           <img
             src="https://cdn-icons-png.flaticon.com/512/2223/2223606.png"
             alt="arrow"
-            className="w-9 md:w-14 pt-6 md:pt-10"
+            className="w-9 md:w-14 pt-6 md:pt-6"
           />
         </div>
       </div>
