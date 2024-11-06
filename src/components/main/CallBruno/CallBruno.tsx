@@ -1,4 +1,5 @@
 import React from "react";
+import { userData } from "../../../data/data";
 
 export const CallBruno = () => {
   return (
@@ -13,12 +14,12 @@ export const CallBruno = () => {
             PROJECT
           </div>
           <div className="text-4xl md:text-5xl">Call</div>
-          <div className="text-4xl md:text-5xl">Bruno</div>
+          <div className="text-4xl md:text-5xl">{userData.name}</div>
 
           <img
             src="https://cdn-icons-png.flaticon.com/512/2223/2223606.png"
             alt="arrow"
-            className="w-9 md:w-14 pt-6 md:pt-10"
+            className="w-8 md:w-11 pt-4 md:pt-6"
           />
         </div>
       </div>

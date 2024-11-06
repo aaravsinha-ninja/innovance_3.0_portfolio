@@ -62,7 +62,6 @@ const App = () => {
       >
         <CallBruno />
       </motion.div>
-      
       <Footer />
     </div>
   );
