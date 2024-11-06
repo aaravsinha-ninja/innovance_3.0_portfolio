@@ -10,17 +10,23 @@ import { TestimonialImage } from "./components/main/TestimonialImages/Testimonia
 import { CallBruno } from "./components/main/CallBruno/CallBruno";
 import { Footer } from "./components/globals/Footer";
 import Divider from "./components/main/Divider";
-
 const App = () => {
   return (
     <div className="min-h-screen m-0 p-0">
       <Navbar />
       <Hero />
+      <Divider />
       <MyAdvantage />
+      <Divider />
       <EducationExperience />
-      <LatestProjects />
-      <BrunoQuote />
-      <BrunoCarousel />
+      <Divider />
+      {/* <LatestProjects /> */}
+      {/* <BrunoQuote />
+      <BrunoCarousel /> */}
+      <TestimonialCarousel />
+
+      <TestimonialImage />
+  
       <CallBruno />
       <Footer />
     </div>
