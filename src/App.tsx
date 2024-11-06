@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "./components/globals/Navbar";
 import { Hero } from "./components/main/Hero/Hero";
 import { MyAdvantage } from "./components/main/MyAdvantage/MyAdvantage";
-import EducationExperience  from "./components/main/EducationExperience/EducationExperience";
+import EducationExperience from "./components/main/EducationExperience/EducationExperience";
 import { LatestProjects } from "./components/main/LatestProjects/LatestProjects";
 import { TestimonialCarousel } from "./components/main/Testimonials/TestimonialsCarousel";
 import { TestimonialImage } from "./components/main/TestimonialImages/TestimonialImage";
