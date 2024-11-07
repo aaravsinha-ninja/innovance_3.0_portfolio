@@ -20,7 +20,7 @@ export const CallBruno = () => {
         } transition-all`}
       ></div>
       <div
-        className="border-3 border-transparent rounded-full w-[272px] h-[272px] md:w-80 md:h-80 flex flex-col justify-center items-center z-10 relative hover:scale-105 transition-all"
+        className="border-3 border-transparent rounded-full w-[272px] h-[272px] md:w-80 md:h-80 flex flex-col justify-center items-center z-10 relative hover:scale-105 transition-all duration-700"
         onMouseOver={() => {
           setHover(true);
         }}

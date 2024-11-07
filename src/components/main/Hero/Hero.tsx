@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../styles/hero.css";
 
 const Hero: React.FC = () => {
   return (
@@ -40,7 +41,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Biography, Contact, and Services */}
-          <div className="grid gap-8 md:order-1 md:mt-40 md:text-left xl:grid-rows-3 xl:gap-y-16 xl:mt-64">
+          <div
+            className="grid gap-8 md:order-1 md:mt-40 xl:grid-rows-3 xl:gap-y-16 xl:mt-64 text-center md:text-left"
+            id="heroid"
+          >
             <div>
               <h3 className="text-sm font-normal text-gray-500 mb-4 font-montserrat">
                 BIOGRAPHY
@@ -73,7 +77,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Experience, Projects, and Companies */}
-          <div className="grid gap-8 md:order-3 md:mt-40 md:text-right xl:grid-rows-3 xl:gap-y-16 xl:mt-64">
+          <div
+            className="grid gap-8 md:order-3 md:mt-40 md:text-right xl:grid-rows-3 xl:gap-y-16 xl:mt-64"
+            id="heroid"
+          >
             <div>
               <h3 className="text-sm font-normal text-gray-500 mb-4 font-montserrat">
                 YEARS OF EXPERIENCE
