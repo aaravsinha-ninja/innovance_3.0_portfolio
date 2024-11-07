@@ -12,15 +12,12 @@ export const CallBruno = () => {
   return (
     <div className="m-auto w-fit font-imfell relative">
       <div
-        // initial={{ scale: 1 }}
-        // animate={hover ? { scale: 1.05 } : { scale: 1 }}
-        // transition={{ duration: 0, ease: [0.4, 0, 0.2, 1] }}
-        className={`border-gray-300 border-3 border-dashed rounded-full w-[272px] h-[272px] md:w-80 md:h-80 absolute ${
+        className={`border-gray-300 border-[3px] border-dashed rounded-full w-[272px] h-[272px] md:w-80 md:h-80 absolute ${
           !hover ? "animate-spin" : "animate-none"
         } transition-all`}
       ></div>
       <div
-        className="border-3 border-transparent rounded-full w-[272px] h-[272px] md:w-80 md:h-80 flex flex-col justify-center items-center z-10 relative hover:scale-105 transition-all duration-700"
+        className="bg-transparent rounded-full w-[272px] h-[272px] md:w-80 md:h-80 flex flex-col justify-center items-center z-10 relative hover:scale-105 transition-all duration-700"
         onMouseOver={() => {
           setHover(true);
         }}
