@@ -39,6 +39,23 @@ export const MyAdvantage = () => {
             : html,
       }))
     );
+    setMyadv(
+      testimonials.skills.map((skill) => ({
+        ...skill,
+        image:
+          skill.name === "Figma"
+            ? figma
+            : skill.name === "Sketch"
+            ? sketch
+            : skill.name === "Adobe XD"
+            ? adobe
+            : skill.name === "Javascript"
+            ? js
+            : skill.name === "Bootstrap"
+            ? bootstrap
+            : html,
+      }))
+    );
   }, []);
 
   return (
