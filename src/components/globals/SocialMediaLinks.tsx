@@ -3,7 +3,7 @@ import { socials } from "../../data/data";
 
 const SocialMediaLinks = () => {
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-9">
       {socials &&
         socials.map((social) => (
           <div key={social.name}>
@@ -11,7 +11,7 @@ const SocialMediaLinks = () => {
               <img
                 src={social.icon}
                 alt={social.name}
-                className="aspect-square w-8"
+                className="aspect-square w-7"
               />
             </a>
           </div>

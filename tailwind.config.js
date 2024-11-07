@@ -7,6 +7,9 @@ module.exports = {
         montserratBold: ["montserratBold"],
         imfell: ["imfell"],
       },
+      animation: {
+        spin: "spin 30s linear infinite",
+      },
     },
   },
   plugins: [],

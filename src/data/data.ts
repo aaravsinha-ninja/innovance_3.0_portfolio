@@ -1,13 +1,13 @@
 import { User } from "../types/types";
 
 export const userData: User = {
-  name: "Bruno",
-  email: "bruno@example.com",
+  name: "Alice",
+  email: "alice@example.com",
 };
 
 export const footer = {
   copyRightText: "all rights reserved",
-  email: "email@domain.com",
+  email: userData.email,
 };
 
 export const navlinks = [
@@ -21,20 +21,30 @@ export const navlinks = [
   },
 ];
 
-export const details = {
-  logo: "https://media.licdn.com/dms/image/v2/C560BAQFmuLSyL1nlPA/company-logo_200_200/company-logo_200_200/0/1678231359043/github_logo?e=2147483647&v=beta&t=2RO1zjla4T-YiOqKS50e4sc9n8RAgnUqGqu0mcZp5fU",
-  name: "NAME",
+export const navbar_details = {
+  logo: "https://static.vecteezy.com/system/resources/previews/006/816/978/non_2x/code-icon-coding-symbol-coding-programming-sign-free-vector.jpg",
+  name: userData.name,
 };
 
 export const socials = [
   {
+    link: "https://dribbble.com/",
+    icon: "https://img.icons8.com/?size=100&id=Wkmw3VcFPr8T&format=png&color=000000",
+    name: "dribbble",
+  },
+  {
     link: "https://github.com/",
-    icon: "https://media.licdn.com/dms/image/v2/C560BAQFmuLSyL1nlPA/company-logo_200_200/company-logo_200_200/0/1678231359043/github_logo?e=2147483647&v=beta&t=2RO1zjla4T-YiOqKS50e4sc9n8RAgnUqGqu0mcZp5fU",
+    icon: "https://img.icons8.com/?size=100&id=63777&format=png&color=000000",
     name: "github",
   },
   {
     link: "https://facebook.com/",
-    icon: "https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg",
+    icon: "https://img.icons8.com/?size=100&id=118497&format=png&color=000000",
     name: "facebook",
+  },
+  {
+    link: "https://twitter.com/",
+    icon: "https://img.icons8.com/?size=100&id=13963&format=png&color=000000",
+    name: "twitter",
   },
 ];
