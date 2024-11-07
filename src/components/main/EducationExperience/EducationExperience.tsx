@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../styles/hero.css";
 
 const EducationExperience = () => {
   const education = [
@@ -46,8 +47,11 @@ const EducationExperience = () => {
       <h2 className="text-2xl md:text-3xl font-thin font-imfell mb-8 md:mb-12 text-center">
         Education & Experience
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] lg:mx-[8rem]">
-        <div className="text-left">
+      <div
+        className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] lg:mx-[8rem]"
+        id="heroid"
+      >
+        <div className="">
           {education.map((edu, index) => (
             <div key={index} className="mb-2 ">
               <p className="text-sm font-semibold text-gray-400 mb-2 md:mb-4">
@@ -59,7 +63,7 @@ const EducationExperience = () => {
           ))}
         </div>
         {experience.map((exp, index) => (
-          <div key={index} className="text-left">
+          <div key={index} className="">
             <p className="text-sm font-semibold text-gray-400 mb-2 lg:mb-4">
               {exp.period}
             </p>
