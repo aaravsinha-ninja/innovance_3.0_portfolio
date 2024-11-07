@@ -15,10 +15,10 @@ export const Navbar = () => {
 
   const variants = {
     hidden: { opacity: 0, y: 0 },
-    visible: { opacity: 1, y: 124 },
+    visible: { opacity: 1, y: 108 },
   };
   return (
-    <div className="text-sm font-montserratBold font-black w-[70vw] m-auto">
+    <div className="text-sm font-montserrat font-black w-[70vw] m-auto">
       <div className="flex justify-between items-center z-50 relative py-6 bg-white">
         <div className="md:flex gap-7 hidden">
           {navlinks &&
@@ -32,7 +32,7 @@ export const Navbar = () => {
         </div>
         <div className="flex flex-col items-center gap-3">
           <div>
-            <img src={navbar_details.logo} alt="logo" className="w-14" />
+            <img src={navbar_details.logo} alt="logo" className="w-10" />
           </div>
           <div>{navbar_details.name}</div>
         </div>
@@ -56,7 +56,7 @@ export const Navbar = () => {
               exit="hidden"
               variants={variants}
               transition={{ duration: 0.5 }}
-              className="p-4 md:hidden absolute top-0 left-0 bg-white w-full"
+              className="p-4 md:hidden absolute top-0 left-0 bg-white w-full border-b-black border"
             >
               <div className="flex flex-col gap-7 md:gap-4 w-[70vw] m-auto">
                 {navlinks &&

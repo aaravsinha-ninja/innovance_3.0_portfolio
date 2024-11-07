@@ -28,23 +28,23 @@ export const navbar_details = {
 
 export const socials = [
   {
+    link: "https://dribbble.com/",
+    icon: "https://img.icons8.com/?size=100&id=Wkmw3VcFPr8T&format=png&color=000000",
+    name: "dribbble",
+  },
+  {
     link: "https://github.com/",
-    icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    icon: "https://img.icons8.com/?size=100&id=63777&format=png&color=000000",
     name: "github",
   },
   {
-    link: "https://linkedin.com/",
-    icon: "https://cdn-icons-png.flaticon.com/512/61/61109.png",
-    name: "facebook",
-  },
-  {
     link: "https://facebook.com/",
-    icon: "https://cdn-icons-png.flaticon.com/512/11376/11376329.png",
+    icon: "https://img.icons8.com/?size=100&id=118497&format=png&color=000000",
     name: "facebook",
   },
   {
     link: "https://twitter.com/",
-    icon: "https://www.svgrepo.com/show/47722/twitter-black-shape.svg",
+    icon: "https://img.icons8.com/?size=100&id=13963&format=png&color=000000",
     name: "twitter",
   },
 ];
