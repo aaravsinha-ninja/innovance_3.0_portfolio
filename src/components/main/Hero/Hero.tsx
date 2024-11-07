@@ -6,8 +6,11 @@ const Hero: React.FC = () => {
       <section id="home" className="py-8 flex justify-center">
         <div className="max-w-6xl mx-6 lg:mx-8 sm:mx-4 grid lg:gap-16 md:gap-12 max-md:gap-10 lg:pt-8 md:grid-cols-[1fr_2fr_1fr]">
           {/* Hero Text and Image */}
-          <div className="grid xl:gap-8 lg:gap-6 md:order-2 text-center">
-            <h1 className="text-center lg:text-4xl xl:text-5xl text-3xl font-montserratBold font-bold tracking-wide mb-2">
+          <div className="grid xl:gap-8 lg:gap-6 gap-4 md:order-2 text-center">
+            <h1
+              style={{ lineHeight: "1.25" }}
+              className="text-center lg:text-4xl xl:text-5xl text-3xl font-imfell font-semibold tracking-wider mb-2"
+            >
               Hi, I’m Alice <br />
               UI/UX Interaction Developer <br />
               Based in England

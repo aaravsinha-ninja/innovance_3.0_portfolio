@@ -11,12 +11,27 @@ import { CallBruno } from "./components/main/CallBruno/CallBruno";
 import { Footer } from "./components/globals/Footer";
 import Divider from "./components/main/Divider";
 import { motion } from "framer-motion";
-import CustomCursor from "./components/globals/CustomCursor";
+// import CustomCursor from "./components/globals/CustomCursor";
+import AnimatedCursor from "react-animated-cursor";
 
 const App = () => {
   return (
     <div className="min-h-screen m-0 p-0">
-      <CustomCursor />
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={30}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        // hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "",
+        }}
+        outerStyle={{
+          border: "2px solid black",
+        }}
+      />
+      {/* <CustomCursor /> */}
       <Navbar />
       <motion.div
         initial={{ opacity: 0 }}
