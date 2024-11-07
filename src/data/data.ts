@@ -13,11 +13,13 @@ export const footer = {
 export const navlinks = [
   {
     name: "WORKS",
-    link: "",
+    link: "LatestProjects",
+    elementId: "LatestProjects",
   },
   {
     name: "CONTACTS",
     link: "",
+    elementId: "CallAlice",
   },
 ];
 

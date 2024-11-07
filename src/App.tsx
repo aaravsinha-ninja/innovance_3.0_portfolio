@@ -46,6 +46,7 @@ const App = () => {
       </motion.div>
 
       <motion.div
+        id="LatestProjects"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
@@ -59,11 +60,12 @@ const App = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
       >
-        <TestimonialCarousel/>
+        <TestimonialCarousel />
         <TestimonialImage />
       </motion.div>
 
       <motion.div
+        id="CallAlice"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}

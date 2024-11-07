@@ -3,7 +3,7 @@ import { socials } from "../../data/data";
 
 const SocialMediaLinks = () => {
   return (
-    <div className="flex gap-9">
+    <div className="flex md:gap-9 justify-between w-full md:w-fit ">
       {socials &&
         socials.map((social) => (
           <div key={social.name}>
