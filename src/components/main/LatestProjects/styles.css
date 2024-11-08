@@ -102,7 +102,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: gray; /* Default color for pagination bullets */
+    background: black !important; /* Change default color for pagination bullets to black */
 }
 
 .swiper-pagination-bullet-active {

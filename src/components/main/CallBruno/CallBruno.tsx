@@ -21,7 +21,7 @@ export const CallBruno = () => {
                 }}>
                 <div>
                     <div className="text-gray-400 font-montserrat text-xs font-semibold">DESCRIBE YOUR</div>
-                    <div className="text-gray-400 font-montserrat text-xs font-semibold">PROJECT</div>
+                    <div className="text-gray-400 font-montserrat text-xs mb-4 font-semibold">PROJECT</div>
                     <div className="text-4xl md:text-5xl">Call</div>
                     <div className="text-4xl md:text-5xl">{userData.name}</div>
                     <img src="https://cdn-icons-png.flaticon.com/512/2223/2223606.png" alt="arrow" className="w-8 md:w-11 pt-4 md:pt-6" />
