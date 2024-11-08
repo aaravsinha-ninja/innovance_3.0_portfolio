@@ -1,6 +1,13 @@
 export interface User {
     name: string;
     email: string;
+    socials: Social[];
+}
+
+export interface Social {
+    link: string;
+    icon: string;
+    name: string;
 }
 
 export interface MyAdv {

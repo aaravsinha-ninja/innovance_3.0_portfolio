@@ -1,15 +1,40 @@
 import {User} from "../types/types";
 
+// User Information
 export const userData: User = {
     name: "Alice",
     email: "alice@example.com",
+    socials: [
+        {
+            link: "https://dribbble.com/",
+            icon: "https://img.icons8.com/?size=100&id=Wkmw3VcFPr8T&format=png&color=000000",
+            name: "dribbble",
+        },
+        {
+            link: "https://github.com/",
+            icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
+            name: "github",
+        },
+        {
+            link: "https://facebook.com/",
+            icon: "https://img.icons8.com/?size=100&id=118497&format=png&color=000000",
+            name: "facebook",
+        },
+        {
+            link: "https://twitter.com/",
+            icon: "https://img.icons8.com/?size=100&id=13963&format=png&color=000000",
+            name: "twitter",
+        },
+    ],
 };
 
-export const footer = {
-    copyRightText: "all rights reserved",
-    email: userData.email,
+// Navbar Details
+export const navbar_details = {
+    logo: "https://static.vecteezy.com/system/resources/previews/006/816/978/non_2x/code-icon-coding-symbol-coding-programming-sign-free-vector.jpg",
+    name: userData.name,
 };
 
+// Navigation Links
 export const navlinks = [
     {
         name: "WORKS",
@@ -23,34 +48,64 @@ export const navlinks = [
     },
 ];
 
-export const navbar_details = {
-    logo: "https://static.vecteezy.com/system/resources/previews/006/816/978/non_2x/code-icon-coding-symbol-coding-programming-sign-free-vector.jpg",
-    name: userData.name,
+// Hero Section Data
+export const heroData = {
+    name: "Alice",
+    profession: "UI/UX Interaction Developer",
+    location: "England",
+    biography: "Work for money and design for love! I'm Alice, a UI/UX Interaction Designer based in England.",
+    contact: {
+        city: "London, England",
+        email: "alice@example.com",
+        phone: "+44 1234567890",
+    },
+    services: ["Website Design", "UI/UX Development", "Graphic Design"],
+    stats: [
+        {title: "YEARS OF EXPERIENCE", stat: "8+"},
+        {title: "SATISFACTION OF CLIENTS", stat: "100%"},
+        {title: "CLIENTS ON WORLDWIDE", stat: "80+"},
+        {title: "PROJECTS DONE", stat: "67"},
+    ],
+    profileImage: "/profile.png",
+    waveImage: "/shape-waves.svg",
+    circleImage: "/shape-circle.svg",
 };
 
-export const socials = [
+// My Advantage Section Data
+export const skills = [
     {
-        link: "https://dribbble.com/",
-        icon: "https://img.icons8.com/?size=100&id=Wkmw3VcFPr8T&format=png&color=000000",
-        name: "dribbble",
+        name: "Figma",
+        proficiency: "90%",
+        image: "/images/MyAdvantageLogos/figma.png",
     },
     {
-        link: "https://github.com/",
-        icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
-        name: "github",
+        name: "Sketch",
+        proficiency: "95%",
+        image: "/images/MyAdvantageLogos/sketch.png",
     },
     {
-        link: "https://facebook.com/",
-        icon: "https://img.icons8.com/?size=100&id=118497&format=png&color=000000",
-        name: "facebook",
+        name: "Adobe XD",
+        proficiency: "82%",
+        image: "/images/MyAdvantageLogos/adobe.png",
     },
     {
-        link: "https://twitter.com/",
-        icon: "https://img.icons8.com/?size=100&id=13963&format=png&color=000000",
-        name: "twitter",
+        name: "Javascript",
+        proficiency: "93%",
+        image: "/images/MyAdvantageLogos/javascript.png",
+    },
+    {
+        name: "Bootstrap",
+        proficiency: "76%",
+        image: "/images/MyAdvantageLogos/bootstrap.png",
+    },
+    {
+        name: "HTML5/CSS",
+        proficiency: "88%",
+        image: "/images/MyAdvantageLogos/html.png",
     },
 ];
 
+// Education & Experience Section Data
 export const education = [
     {
         year: "2014",
@@ -91,39 +146,7 @@ export const experience = [
     },
 ];
 
-export const skills = [
-    {
-        name: "Figma",
-        proficiency: "90%",
-        image: "/images/MyAdvantageLogos/figma.png",
-    },
-    {
-        name: "Sketch",
-        proficiency: "95%",
-        image: "/images/MyAdvantageLogos/sketch.png",
-    },
-    {
-        name: "Adobe XD",
-        proficiency: "82%",
-        image: "/images/MyAdvantageLogos/adobe.png",
-    },
-    {
-        name: "Javascript",
-        proficiency: "93%",
-        image: "/images/MyAdvantageLogos/javascript.png",
-    },
-    {
-        name: "Bootstrap",
-        proficiency: "76%",
-        image: "/images/MyAdvantageLogos/bootstrap.png",
-    },
-    {
-        name: "HTML5/CSS",
-        proficiency: "88%",
-        image: "/images/MyAdvantageLogos/html.png",
-    },
-];
-
+// Latest Projects Section Data
 export const latestProjects = [
     {
         href: "https://www.nationalgeographic.com/",
@@ -169,6 +192,7 @@ export const latestProjects = [
     },
 ];
 
+// Testimonials Section Data
 export const testimonials = [
     {
         quote: "Alice was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish. Great services & Recommended!",
@@ -201,3 +225,12 @@ export const testimonials = [
         company: "Spotify",
     },
 ];
+
+// Testimonial Images Section Data
+export const testimonialImageTitle = "@alicewatson";
+
+// Footer Section Data
+export const footer = {
+    copyRightText: "all rights reserved",
+    email: userData.email,
+};
