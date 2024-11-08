@@ -41,7 +41,7 @@ export const Navbar = () => {
             navlinks.map((navlink) => (
               <div>
                 <div
-                  className="text-black no-underline"
+                  className="text-black no-underline cursor-pointer"
                   onClick={(e) => {
                     scrollToElement(e, `${navlink.elementId}`, 80);
                   }}

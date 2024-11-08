@@ -18,7 +18,7 @@ export const navlinks = [
     },
     {
         name: "CONTACTS",
-        link: "",
+        link: "CallAlice",
         elementId: "CallAlice",
     },
 ];
@@ -171,7 +171,7 @@ export const latestProjects = [
 
 export const testimonials = [
     {
-        quote: "Bruno was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish. Great services & Recommended!",
+        quote: "Alice was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish. Great services & Recommended!",
         author: "Jurgen Kloop",
         position: "Product Management",
         company: "Google Inc",
@@ -183,19 +183,19 @@ export const testimonials = [
         company: "Airbnb",
     },
     {
-        quote: "Working with Liam was a fantastic experience. He took the time to understand our needs and delivered beyond our expectations. Highly recommended!",
+        quote: "Working with Alice was a fantastic experience. He took the time to understand our needs and delivered beyond our expectations. Highly recommended!",
         author: "Jim Halpert",
         position: "Sales Manager",
         company: "Paper Co",
     },
     {
-        quote: "Jordan's technical skills are matched by his professionalism. He's detail-oriented and always delivers on time. A true asset to any project!",
+        quote: "Alice's technical skills are matched by his professionalism. He's detail-oriented and always delivers on time. A true asset to any project!",
         author: "Pam Beesly",
         position: "Project Coordinator",
         company: "Apple Inc.",
     },
     {
-        quote: "Matthew's reliability and talent made our collaboration seamless. His attention to detail is unparalleled. We look forward to future projects!",
+        quote: "Alice's reliability and talent made our collaboration seamless. His attention to detail is unparalleled. We look forward to future projects!",
         author: "Phoebe Buffay",
         position: "Human Resources",
         company: "Spotify",
