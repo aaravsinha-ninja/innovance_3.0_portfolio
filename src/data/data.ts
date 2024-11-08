@@ -18,7 +18,7 @@ export const navlinks = [
     },
     {
         name: "CONTACTS",
-        link: "",
+        link: "CallAlice",
         elementId: "CallAlice",
     },
 ];
