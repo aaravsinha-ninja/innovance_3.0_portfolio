@@ -1,5 +1,4 @@
 import "../../../styles/hero.css";
-import {education, experience} from "../../../data/data";
 
 const EducationExperience = () => {
   const education = [
