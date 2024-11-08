@@ -51,9 +51,9 @@ const EducationExperience = () => {
         className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] lg:mx-[8rem]"
         id="heroid"
       >
-        <div className="">
+        <div>
           {education.map((edu, index) => (
-            <div key={index} className="mb-2 ">
+            <div key={index} className="mb-2 leading-relaxed sm:leading-normal">
               <p className="text-sm font-semibold text-gray-400 mb-2 md:mb-4">
                 {edu.year}
               </p>
@@ -63,12 +63,15 @@ const EducationExperience = () => {
           ))}
         </div>
         {experience.map((exp, index) => (
-          <div key={index} className="">
+          <div key={index}>
             <p className="text-sm font-semibold text-gray-400 mb-2 lg:mb-4">
               {exp.period}
             </p>
             {exp.items.map((item, i) => (
-              <div key={i} className="mb-1 lg:mb-2">
+              <div
+                key={i}
+                className="mb-1 lg:mb-2 leading-relaxed sm:leading-normal"
+              >
                 <h3 className="text-lg lg:text-xl font-imfell">{item.title}</h3>
                 <p className="text-gray-500 font-semibold">
                   {item.institution}
