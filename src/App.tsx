@@ -1,96 +1,57 @@
 import "./App.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar } from "./components/globals/Navbar";
+import {Navbar} from "./components/globals/Navbar";
 import Hero from "./components/main/Hero/Hero";
-import { MyAdvantage } from "./components/main/MyAdvantage/MyAdvantage";
+import {MyAdvantage} from "./components/main/MyAdvantage/MyAdvantage";
 import EducationExperience from "./components/main/EducationExperience/EducationExperience";
-import { LatestProjects } from "./components/main/LatestProjects/LatestProjects";
-import { TestimonialCarousel } from "./components/main/Testimonials/TestimonialsCarousel";
-import { TestimonialImage } from "./components/main/TestimonialImages/TestimonialImage";
-import { CallBruno } from "./components/main/CallBruno/CallBruno";
-import { Footer } from "./components/globals/Footer";
-import Divider from "./components/main/Divider";
-import { motion } from "framer-motion";
-// import CustomCursor from "./components/globals/CustomCursor";
-import AnimatedCursor from "react-animated-cursor";
+import {LatestProjects} from "./components/main/LatestProjects/LatestProjects";
+import {TestimonialCarousel} from "./components/main/Testimonials/TestimonialsCarousel";
+import {CallBruno} from "./components/main/CallBruno/CallBruno";
+import {Footer} from "./components/globals/Footer";
+import {FadeEffect} from "./components/globals/FadeEffect";
+import TestimonialImage from "./components/main/TestimonialImages/TestimonialImage";
 
 const App = () => {
-  return (
-    <div className="min-h-screen m-0 p-0">
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={30}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        // hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: "",
-        }}
-        outerStyle={{
-          border: "2px solid black",
-        }}
-      />
-      {/* <CustomCursor /> */}
-      <Navbar />
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-      >
-        <Hero />
-      </motion.div>
+    return (
+        <div className="min-h-screen m-0 p-0">
+            
+            {/* Fix the lag of animated cursor */}
+            {/* <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} /> */}
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-      >
-        <MyAdvantage />
-      </motion.div>
+            <Navbar />
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-      >
-        <EducationExperience />
-      </motion.div>
+            <FadeEffect>
+                <Hero />
+            </FadeEffect>
 
-      <motion.div
-        id="LatestProjects"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-      >
-        <LatestProjects />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-      >
-        <TestimonialCarousel />
-        <TestimonialImage />
-      </motion.div>
+            <FadeEffect>
+                <MyAdvantage />
+            </FadeEffect>
 
-      <motion.div
-        id="CallAlice"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-      >
-        <CallBruno />
-      </motion.div>
-      <Footer />
-    </div>
-  );
+            <FadeEffect>
+                <EducationExperience />
+            </FadeEffect>
+
+            <FadeEffect id="LatestProjects">
+                <LatestProjects />
+            </FadeEffect>
+
+            <FadeEffect>
+                <TestimonialCarousel />
+            </FadeEffect>
+
+            <FadeEffect>
+                <TestimonialImage />
+            </FadeEffect>
+
+            <FadeEffect id="CallAlice">
+                <CallBruno />
+            </FadeEffect>
+
+            <FadeEffect>
+                <Footer />
+            </FadeEffect>
+        </div>
+    );
 };
 
 export default App;

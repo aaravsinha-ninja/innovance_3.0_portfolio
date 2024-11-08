@@ -38,12 +38,12 @@
 }
 
 * {
-  cursor: none;
+  /* cursor: none; */
 }
 
 a,
 button {
-  cursor: none;
+  /* cursor: none; */
 }
 
 a:hover ~ .custom-cursor,
@@ -53,7 +53,7 @@ button:hover ~ .custom-cursor {
 
 a:hover,
 button:hover {
-  cursor: none !important;
+  /* cursor: none !important; */
 }
 
 .fixed,
