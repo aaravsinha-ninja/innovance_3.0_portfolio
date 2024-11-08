@@ -21,6 +21,10 @@ import AnimatedCursor from "react-animated-cursor";
 const App = () => {
     return (
         <div className="min-h-screen m-0 p-0">
+            
+            {/* Fix the lag of animated cursor */}
+            <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} />
+            {/* <CustomCursor /> */}
             <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} />
             <Navbar />
 
