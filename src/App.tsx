@@ -1,15 +1,21 @@
+// Main CSS
 import "./App.css";
+
+// Global Components
 import {Navbar} from "./components/globals/Navbar";
+import {Footer} from "./components/globals/Footer";
+import {FadeEffect} from "./components/globals/FadeEffect";
+
+// Main Components
 import Hero from "./components/main/Hero/Hero";
 import {MyAdvantage} from "./components/main/MyAdvantage/MyAdvantage";
 import EducationExperience from "./components/main/EducationExperience/EducationExperience";
 import {LatestProjects} from "./components/main/LatestProjects/LatestProjects";
 import {TestimonialCarousel} from "./components/main/Testimonials/TestimonialsCarousel";
-import {CallBruno} from "./components/main/CallBruno/CallBruno";
-import {Footer} from "./components/globals/Footer";
-import {FadeEffect} from "./components/globals/FadeEffect";
 import TestimonialImage from "./components/main/TestimonialImages/TestimonialImage";
-// import CustomCursor from "./components/globals/CustomCursor";
+import {CallBruno} from "./components/main/CallBruno/CallBruno";
+
+// Cursor Animation
 import AnimatedCursor from "react-animated-cursor";
 
 const App = () => {
@@ -19,41 +25,24 @@ const App = () => {
             {/* Fix the lag of animated cursor */}
             <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} />
             {/* <CustomCursor /> */}
+            <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} />
             <Navbar />
 
-            <FadeEffect>
-                <Hero />
-            </FadeEffect>
-
-            <FadeEffect>
-                <MyAdvantage />
-            </FadeEffect>
-
-            <FadeEffect>
-                <EducationExperience />
-            </FadeEffect>
-
-            <FadeEffect id="LatestProjects">
-                <LatestProjects />
-            </FadeEffect>
-
-            <FadeEffect>
-                <TestimonialCarousel />
-            </FadeEffect>
-
-            <FadeEffect>
-                <TestimonialImage />
-            </FadeEffect>
-
-            <FadeEffect id="CallAlice">
-                <CallBruno />
-            </FadeEffect>
-
-            <FadeEffect>
-                <Footer />
-            </FadeEffect>
+            <main>
+                <Section component={<Hero />} />
+                <Section component={<MyAdvantage />} />
+                <Section component={<EducationExperience />} id="LatestProjects" />
+                <Section component={<LatestProjects />} />
+                <Section component={<TestimonialCarousel />} />
+                <Section component={<TestimonialImage />} id="CallAlice" />
+                <Section component={<CallBruno />} />
+            </main>
+            <Footer />
         </div>
     );
 };
+
+// Reusable Section Wrapper with FadeEffect
+const Section = ({component, id}: any) => <FadeEffect id={id}>{component}</FadeEffect>;
 
 export default App;

@@ -18,7 +18,7 @@ const CustomCursor = () => {
 
         window.addEventListener("mousemove", moveCursor);
         return () => window.removeEventListener("mousemove", moveCursor);
-    }, []);
+    });
 
     return (
         <motion.div
