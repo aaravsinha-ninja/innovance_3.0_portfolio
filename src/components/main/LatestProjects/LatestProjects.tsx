@@ -44,7 +44,7 @@ export const LatestProjects = () => {
               <img src="assests/natgeo_4.KOWE7s8I.jpg" alt="Image1" />
             </a>
             <div className="overlay">Explore the world with Nat Geo.</div>
-            <p className="text mt-3 text-lg font-bold">Nat Geo</p>
+            <p className="text mt-3 mb-4 text-lg font-bold">Nat Geo</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -54,7 +54,7 @@ export const LatestProjects = () => {
               alt="Image2"
             />
             <div className="overlay">Join the Cesar Society community.</div>
-            <p className="text mt-3 text-lg font-bold">Cesar Society</p>
+            <p className="text mt-3 mb-4 text-lg font-bold">Cesar Society</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -66,14 +66,14 @@ export const LatestProjects = () => {
             <div className="overlay">
               Experience the adventures of The Mandalorian.
             </div>
-            <p className="text mt-3 text-lg font-bold">The Mandalorian</p>
+            <p className="text mt-3 mb-4 text-lg font-bold">The Mandalorian</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-container">
             <img src="assests/miniature-fitly.1XfRDU5K.jpg" alt="Image4" />
             <div className="overlay">Stay fit and healthy with Fitly.</div>
-            <p className="text mt-3 text-lg font-bold">Fitly</p>
+            <p className="text mt-3 mb-4 text-lg font-bold">Fitly</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -82,14 +82,14 @@ export const LatestProjects = () => {
               <img src="assests/miniature-adidas.BAdzdOaA.jpg" alt="Image5" />
             </a>
             <div className="overlay">Discover the latest from Adidas.</div>
-            <p className="text mt-3 text-lg font-bold">Adidas</p>
+            <p className="text mt-3 mb-4 text-lg font-bold">Adidas</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-container">
             <img src="assests/miniature-cesar.DznDD4Xt.jpg" alt="Image5" />
             <div className="overlay">Explore the world of Cesar.</div>
-            <p className="text mt-3 text-lg font-bold">Cesar</p>
+            <p className="text mt-3 mb-4 text-lg font-bold">Cesar</p>
           </div>
         </SwiperSlide>
       </Swiper>
