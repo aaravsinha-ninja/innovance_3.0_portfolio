@@ -30,21 +30,22 @@ export const Navbar = () => {
       const targetPosition =
         element.getBoundingClientRect().top + window.scrollY - padding;
       window.scrollTo({ top: targetPosition, behavior: "smooth" });
+      setIsOpened(false); // Close the menu after clicking a link
     }
   }
 
   return (
     <div className="text-sm font-montserrat font-black w-[70vw] m-auto">
+      {/* Top Navbar */}
       <div className="flex justify-between items-center z-50 relative py-6 bg-white">
+        {/* Navigation Links */}
         <div className="md:flex gap-7 hidden md:w-[45%]">
           {navlinks &&
             navlinks.map((navlink) => (
-              <div>
+              <div key={navlink.elementId}>
                 <div
                   className="text-black no-underline cursor-pointer"
-                  onClick={(e) => {
-                    scrollToElement(e, `${navlink.elementId}`, 80);
-                  }}
+                  onClick={(e) => scrollToElement(e, `${navlink.elementId}`, 80)}
                 >
                   {navlink.name}
                 </div>
@@ -52,6 +53,7 @@ export const Navbar = () => {
             ))}
         </div>
 
+        {/* Logo Section */}
         <div className="flex flex-col items-center gap-3 md:w-[10%]">
           <div>
             <img src={navbar_details.logo} alt="logo" className="w-10" />
@@ -59,18 +61,23 @@ export const Navbar = () => {
           <div>{navbar_details.name}</div>
         </div>
 
+        {/* Social Media Links */}
         <div className="hidden md:flex md:justify-end md:w-[45%]">
           <SocialMediaLinks />
         </div>
+
+        {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
           <HamburgerButton isOpen={isOpened} toggleMenu={toggleMenu} />
         </div>
       </div>
 
+      {/* Divider for Mobile */}
       <div className="md:hidden">
         <Divider />
       </div>
 
+      {/* Hamburger Menu Content */}
       <AnimatePresence>
         {isOpened && (
           <div className="bg-white z-50 flex justify-center w-full">
@@ -86,13 +93,15 @@ export const Navbar = () => {
               <div className="flex flex-col gap-7 md:gap-4 w-[70vw] m-auto">
                 {navlinks &&
                   navlinks.map((navlink) => (
-                    <div>
-                      <a
-                        href={navlink.link}
-                        className="text-black no-underline"
+                    <div key={navlink.elementId}>
+                      <div
+                        className="text-black no-underline cursor-pointer"
+                        onClick={(e) =>
+                          scrollToElement(e, `${navlink.elementId}`, 80)
+                        }
                       >
                         {navlink.name}
-                      </a>
+                      </div>
                     </div>
                   ))}
                 <SocialMediaLinks />
