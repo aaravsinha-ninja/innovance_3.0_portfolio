@@ -2,6 +2,11 @@
 
 This repository provides a fully customizable portfolio website template built with **React.js**, **TypeScript**, and **TailwindCSS**. Clone, customize, and deploy to create your own professional portfolio!
 
+## Deployed URL
+
+Check out the live version of this portfolio template: [https://innovance-portfolio.vercel.app/](https://innovance-portfolio.vercel.app/)
+
+
 ##  Features
 
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
