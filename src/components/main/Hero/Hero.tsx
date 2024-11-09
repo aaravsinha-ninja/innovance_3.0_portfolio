@@ -8,7 +8,6 @@ const Hero: React.FC = () => {
         <main className="overflow-hidden">
             <section id="home" className="py-8 flex justify-center">
                 <div className="max-w-6xl mx-6 lg:mx-8 sm:mx-4 grid lg:gap-16 md:gap-12 max-md:gap-10 lg:pt-8 md:grid-cols-[1fr_2fr_1fr]">
-                    
                     {/* Profile Section */}
                     <div className="grid xl:gap-8 lg:gap-6 gap-4 md:order-2 text-center">
                         <h1 style={{lineHeight: "1.25"}} className="text-center lg:text-4xl xl:text-5xl text-3xl font-imfell font-semibold tracking-wider mb-2">
@@ -43,7 +42,8 @@ const Hero: React.FC = () => {
                         </div>
                         <div>
                             <h3 className="text-sm font-normal text-gray-500 mb-4 font-montserrat">SERVICES</h3>
-                            <p className="font-imfell text-lg text-gray-900">{heroData.services.join(" <br /> ")}</p>
+                            <p className="font-imfell text-lg text-gray-900" dangerouslySetInnerHTML={{__html: heroData.services.join("<br />")}}>
+                            </p>
                         </div>
                     </div>
 
