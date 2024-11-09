@@ -20,7 +20,7 @@ Check out the live version of this portfolio template: [https://innovance-portfo
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed
-- Package manager (e.g., `npm` or `yarn`)
+- Package manager (e.g., `npm`)
 
 ### Installation
 
