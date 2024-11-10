@@ -8,7 +8,7 @@ const SocialMediaLinks = () => {
                 userData.socials.map((social) => (
                     <div key={social.name}>
                         <a href={social.link} target="_blank" rel="noopener noreferrer">
-                            <img loading="lazy" src={social.icon} alt={social.name} className="aspect-square grayscale hover:grayscale-0 w-7 transition-all" />
+                            <img src={social.icon} alt={social.name} className="aspect-square grayscale hover:grayscale-0 w-7 transition-all" />
                         </a>
                     </div>
                 ))}

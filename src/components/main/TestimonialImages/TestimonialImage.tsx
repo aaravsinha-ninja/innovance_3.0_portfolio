@@ -8,7 +8,7 @@ const TestimonialImage = () => {
 
             {/* Image displaying a testimonial with defined width and height */}
             <img 
-                src="./assets/carouselImage.jpg"
+                src="./images/carouselImage.jpg"
                 alt="Bruno Edison" 
                 width={900} 
                 height={50} 

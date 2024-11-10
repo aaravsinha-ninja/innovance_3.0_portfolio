@@ -14,7 +14,6 @@ import {LatestProjects} from "./components/main/LatestProjects/LatestProjects";
 import {TestimonialCarousel} from "./components/main/Testimonials/TestimonialsCarousel";
 import TestimonialImage from "./components/main/TestimonialImages/TestimonialImage";
 import {CallBruno} from "./components/main/CallBruno/CallBruno";
-// import CustomCursor from "./components/globals/CustomCursor";
 
 // Cursor Animation
 import AnimatedCursor from "react-animated-cursor";
@@ -23,10 +22,8 @@ const App = () => {
     return (
         <div className="min-h-screen m-0 p-0">
             
-            {/* Fix the lag of animated cursor */}
             <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} />
-            {/* <CustomCursor /> */}
-            {/* <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} /> */}
+            
             <Navbar />
 
             <main>
