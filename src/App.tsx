@@ -13,7 +13,7 @@ import EducationExperience from "./components/main/EducationExperience/Education
 import {LatestProjects} from "./components/main/LatestProjects/LatestProjects";
 import {TestimonialCarousel} from "./components/main/Testimonials/TestimonialsCarousel";
 import TestimonialImage from "./components/main/TestimonialImages/TestimonialImage";
-import {CallBruno} from "./components/main/CallBruno/CallBruno";
+import {MailAlice} from "./components/main/MailAlice/MailAlice";
 
 // Cursor Animation
 import AnimatedCursor from "react-animated-cursor";
@@ -23,7 +23,7 @@ const App = () => {
         <div className="min-h-screen m-0 p-0">
             
             <AnimatedCursor innerSize={8} outerSize={30} innerScale={1} outerScale={2} outerAlpha={0} innerStyle={{backgroundColor: "", zIndex: 9999}} outerStyle={{border: "2px solid black"}} />
-            
+
             <Navbar />
 
             <main>
@@ -33,7 +33,7 @@ const App = () => {
                 <Section component={<LatestProjects />} />
                 <Section component={<TestimonialCarousel />} />
                 <Section component={<TestimonialImage />} id="CallAlice" />
-                <Section component={<CallBruno />} />
+                <Section component={<MailAlice />} />
             </main>
             <Footer />
         </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { userData } from "../../../data/data";
 
-export const CallBruno = () => {
+export const MailAlice = () => {
     const [hover, setHover] = useState(false);
 
     // Reset hover state when component mounts
@@ -19,7 +19,9 @@ export const CallBruno = () => {
             ></div>
 
             {/* Inner circle with hover effects */}
-            <div
+            <a
+                href={`mailto:${userData.email}`}
+                target="_blank"
                 className="bg-transparent rounded-full w-[272px] h-[272px] md:w-80 md:h-80 flex flex-col justify-center items-center z-10 relative hover:scale-105 transition-all duration-700"
                 onMouseOver={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
@@ -41,7 +43,7 @@ export const CallBruno = () => {
                         loading="lazy"
                     />
                 </div>
-            </div>
+            </a>
         </div>
     );
 };
