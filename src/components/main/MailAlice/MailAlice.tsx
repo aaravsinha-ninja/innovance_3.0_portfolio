@@ -21,7 +21,6 @@ export const MailAlice = () => {
             {/* Inner circle with hover effects */}
             <a
                 href={`mailto:${userData.email}`}
-                target="_blank"
                 className="bg-transparent rounded-full w-[272px] h-[272px] md:w-80 md:h-80 flex flex-col justify-center items-center z-10 relative hover:scale-105 transition-all duration-700"
                 onMouseOver={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
@@ -32,7 +31,7 @@ export const MailAlice = () => {
                     <div className="text-gray-400 font-montserrat text-xs mb-4 font-semibold">PROJECT</div>
 
                     {/* Call to action text */}
-                    <div className="text-4xl md:text-5xl">Call</div>
+                    <div className="text-4xl md:text-5xl">Mail</div>
                     <div className="text-4xl md:text-5xl">{userData.name}</div>
 
                     {/* Arrow icon */}
