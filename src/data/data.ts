@@ -50,13 +50,13 @@ export const navlinks = [
 
 // Hero Section Data
 export const heroData = {
-    name: "Alice",
+    name: userData.name,
     profession: "UI/UX Interaction Developer",
     location: "England",
-    biography: "Work for money and design for love! I'm Alice, a UI/UX Interaction Designer based in England.",
+    biography: `Work for money and design for love! I'm ${userData.name}, a UI/UX Interaction Designer based in England.`,
     contact: {
         city: "London, England",
-        email: "alice@example.com",
+        email: userData.email,
         phone: "+44 1234567890",
     },
     services: ["Website Design", "UI/UX Development", "Graphic Design"],
@@ -195,31 +195,31 @@ export const latestProjects = [
 // Testimonials Section Data
 export const testimonials = [
     {
-        quote: "Alice was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish. Great services & Recommended!",
+        quote: `${userData.name} was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish. Great services & Recommended!`,
         author: "Jurgen Kloop",
         position: "Product Management",
         company: "Google Inc",
     },
     {
-        quote: "Alice consistently exceeded expectations. Her attention to detail and creative solutions made the project seamless. Highly recommended!",
+        quote: `${userData.name} consistently exceeded expectations. Her attention to detail and creative solutions made the project seamless. Highly recommended!`,
         author: "Rachel Green",
         position: "Head of Marketing",
         company: "Airbnb",
     },
     {
-        quote: "Working with Alice was a fantastic experience. He took the time to understand our needs and delivered beyond our expectations. Highly recommended!",
+        quote: `Working with ${userData.name} was a fantastic experience. He took the time to understand our needs and delivered beyond our expectations. Highly recommended!`,
         author: "Jim Halpert",
         position: "Sales Manager",
         company: "Paper Co",
     },
     {
-        quote: "Alice's technical skills are matched by his professionalism. He's detail-oriented and always delivers on time. A true asset to any project!",
+        quote: `${userData.name}'s technical skills are matched by his professionalism. He's detail-oriented and always delivers on time. A true asset to any project!`,
         author: "Pam Beesly",
         position: "Project Coordinator",
         company: "Apple Inc.",
     },
     {
-        quote: "Alice's reliability and talent made our collaboration seamless. His attention to detail is unparalleled. We look forward to future projects!",
+        quote: `${userData.name}'s reliability and talent made our collaboration seamless. His attention to detail is unparalleled. We look forward to future projects!`,
         author: "Phoebe Buffay",
         position: "Human Resources",
         company: "Spotify",
@@ -227,7 +227,7 @@ export const testimonials = [
 ];
 
 // Testimonial Images Section Data
-export const testimonialImageTitle = "@alicewatson";
+export const testimonialImageTitle = `@${userData.name}`;
 
 // Footer Section Data
 export const footer = {

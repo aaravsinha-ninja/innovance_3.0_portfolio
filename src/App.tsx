@@ -29,10 +29,10 @@ const App = () => {
             <main>
                 <Section component={<Hero />} />
                 <Section component={<MyAdvantage />} />
-                <Section component={<EducationExperience />} id="LatestProjects" />
+                <Section component={<EducationExperience />} sectionId="LatestProjects" />
                 <Section component={<LatestProjects />} />
                 <Section component={<TestimonialCarousel />} />
-                <Section component={<TestimonialImage />} id="CallAlice" />
+                <Section component={<TestimonialImage />} sectionId="CallAlice" />
                 <Section component={<MailAlice />} />
             </main>
             <Footer />
@@ -41,6 +41,6 @@ const App = () => {
 };
 
 // Reusable Section Wrapper with FadeEffect
-const Section = ({component, id}: any) => <FadeEffect id={id}>{component}</FadeEffect>;
+const Section = ({component, sectionId}: any) => <FadeEffect sectionId={sectionId}>{component}</FadeEffect>;
 
 export default App;

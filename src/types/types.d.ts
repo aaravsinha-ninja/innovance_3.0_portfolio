@@ -18,7 +18,7 @@ export interface MyAdv {
 
 export interface FadeEffectProps {
     children: ReactNode;
-    id?: string;
+    sectionId?: string;
 }
 
 export interface AnimatedHamburgerProps {
