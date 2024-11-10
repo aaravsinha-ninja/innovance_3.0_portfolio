@@ -18,7 +18,7 @@ const EducationExperience = () => {
                             <p className="text-xs font-semibold text-gray-400 mb-2 md:mb-4">{edu.year}</p>
                             
                             {/* Title of Degree/Certification */}
-                            <h3 className="text-base md:text-lg mb-8 md:mb-0 mt-8 font-imfell">{edu.title}</h3>
+                            <h3 className="text-base md:text-lg mb-2 md:mb-0 mt-8 font-imfell">{edu.title}</h3>
                             
                             {/* Institution Name */}
                             <p className="text-gray-400 text-xs font-semibold">{edu.institution}</p>
@@ -36,7 +36,7 @@ const EducationExperience = () => {
                         {exp.items.map((item, i) => (
                             <div key={i} className="mb-1 mt-8 lg:mb-2">
                                 {/* Job Title or Position */}
-                                <h3 className="text-base lg:text-lg mb-8 md:mb-0 font-imfell">{item.title}</h3>
+                                <h3 className="text-base lg:text-lg mb-2 md:mb-0 font-imfell">{item.title}</h3>
                                 
                                 {/* Company or Institution */}
                                 <p className="text-gray-400 text-xs font-semibold">{item.institution}</p>
