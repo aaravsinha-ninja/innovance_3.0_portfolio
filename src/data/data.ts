@@ -2,8 +2,8 @@ import {User} from "../types/types";
 
 // User Information
 export const userData: User = {
-    name: "Alice",
-    email: "helloworld@example.com",
+    name: "Shanu",
+    email: "sk5575723@gmail.com",
     socials: [
         {
             link: "https://dribbble.com/",
@@ -11,17 +11,17 @@ export const userData: User = {
             name: "dribbble",
         },
         {
-            link: "https://github.com/",
+            link: "https://github.com/aaravsinha-ninja",
             icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
             name: "github",
         },
         {
-            link: "https://facebook.com/",
+            link: "https://www.facebook.com/Aaravsinha55757",
             icon: "https://img.icons8.com/?size=100&id=118497&format=png&color=000000",
             name: "facebook",
         },
         {
-            link: "https://twitter.com/",
+            link: "https://x.com/sk5575723",
             icon: "https://img.icons8.com/?size=100&id=13963&format=png&color=000000",
             name: "twitter",
         },
