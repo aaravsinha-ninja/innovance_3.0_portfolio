@@ -4,7 +4,7 @@ This repository provides a fully customizable portfolio website template built w
 
 ## Deployed URL
 
-Check out the live version of this portfolio template: [https://innovance-portfolio.vercel.app/](https://innovance-portfolio.vercel.app/)
+Check out the live version of this portfolio template: [https://portfolio.iotkiit.in/](https://portfolio.iotkiit.in/)
 
 
 ##  Features
