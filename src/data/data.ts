@@ -3,7 +3,7 @@ import {User} from "../types/types";
 // User Information
 export const userData: User = {
     name: "Alice",
-    email: "alice@example.com",
+    email: "helloworld@example.com",
     socials: [
         {
             link: "https://dribbble.com/",
