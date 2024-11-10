@@ -27,7 +27,7 @@ const CustomCursor = () => {
                 y: cursorYSpring,
                 zIndex: 9999,
             }}>
-            <img src={cursor} alt="custom cursor" />
+            <img loading="lazy" src={cursor} alt="custom cursor" />
         </motion.div>
     );
 };

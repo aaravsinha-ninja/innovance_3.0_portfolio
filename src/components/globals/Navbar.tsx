@@ -48,7 +48,7 @@ export const Navbar = () => {
                 {/* Logo Section */}
                 <div className="flex flex-col items-center gap-3 md:w-[10%]">
                     <div>
-                        <img src={navbar_details.logo} alt="logo" className="w-10" />
+                        <img loading="lazy" src={navbar_details.logo} alt="logo" className="w-10" />
                     </div>
                     <div>{navbar_details.name}</div>
                 </div>
